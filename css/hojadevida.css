@@ -1,0 +1,23 @@
+body{
+    background-color: #bedffb;
+}
+.par, .ipar{
+    background-color: #ccccff;
+}
+.impar{
+    background-color: #b2faf7;
+}
+.txt2{
+    background: black;
+    color: antiquewhite;
+    border-left-width: 10px #000;
+    border-radius: 20%;
+}
+body, input{
+        background-color: #b2faf7;
+}
+.head-edu{
+    background-color: #a0e2b3;
+}
+
+
