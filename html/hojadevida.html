@@ -25,311 +25,325 @@
 </head>
 <body>
     <header>
-        <table border="2" align="center" height=90 width="100%" style="margin: 0 auto;">
-            <tr>
-                <td aling="vertical-align:middle" style="width: 100px; border-right: 0;" >
-                    <img width=250px height="100% " 
-                    src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Coat_of_arms_of_Colombia.svg" 
-                    alt="Bandera Federación">
-                </td>
-                 <td style="border-left: 0;" align="center">
-                    <p>FORMATO ÚNICO</p>
-                    <p><strong>HOJA DE VIDA</strong></p>
-                    <p>Persona Natural</p>
-                    <p>(Leyes 190 de 1995, 489 y 443 de 1998)</p>  
-                    <td align="left" style="padding-left: 20px;"><em>Entidad Receptora</em> <br>
-                        <input type="text" value="" id="entidadRE"></td>
-                </td>    
-            </tr>
-            </table>
+        <div class="container" id="container1">
+            <table border="2" align="center" height=90 width="100%" style="margin: 0 auto;">
+                <tr>
+                    <td aling="vertical-align:middle" style="width: 100px; border-right: 0;" >
+                        <img width=250px height="100% " 
+                        src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Coat_of_arms_of_Colombia.svg" 
+                        alt="Bandera Federación">
+                    </td>
+                     <td style="border-left: 0;" align="center">
+                        <p>FORMATO ÚNICO</p>
+                        <p><strong>HOJA DE VIDA</strong></p>
+                        <p>Persona Natural</p>
+                        <p>(Leyes 190 de 1995, 489 y 443 de 1998)</p>  
+                        <td align="left" style="padding-left: 20px;"><em>Entidad Receptora</em> <br>
+                            <input type="text" value="" id="entidadRE"></td>
+                    </td>    
+                </tr>
+                </table>
+        </div>
     </header>
     <main style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
             <OL class="lista">
                 <li><span class="txt2">DATOS PERSONALES</span></li>
                 <br>
-                <table border="1" style="width: 100%;">
-                    <tr align="left">
-                        <td>
-                            <em>Primer Apellido</em><br>
-                            <input type="text" value="" id="txtapellido">
-                        </td>
-                        <td>
-                            <em>Segundo apellido (o de casa)</em><br>
-                            <input type="text" value="" id="txtsegundoapellido">
-                        </td>
-                        <td>
-                            <em>Nombres</em><br>
-                            <input type="text" value="" id="txtnombre">
-                        </td>               
-                    </tr>
-                </table>
-                <table border="2" style="width: 100%;">
-                    <tr>
-                        <td WIDTH = "600PX">
-                            <em>Tipo de identificación</em><br>
-                                C.C<input type="radio" value="" id="C.C" name="id">
-                                C.E<input type="radio" value="" id="C.E" name="id">
-                                PAS<input type="radio" value="" id="PAS" name="id">
-                                &nbsp;&nbsp;<em>No.</em>
-                                <input type="text" value="" id="numeroID">
-                        </td>
-                        <td WIDTH="200px">
-                            <em>Sexo</em>
-                            <br>
-                            F<input type="radio" value="" id="SF" name="genero">
-                            M<input type="radio" value="" id="SM" name="genero">
-                        </td>
-                        <td WIDHT="200px">
-                            <em>Nacionalidad</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <em>País</em>
-                            <br>
-                            <em>COL.</em><input type="radio" value="" id="Colombia" name="nacio">
-                            <em>Extranjero</em><input type="radio" value="" id="Extranjero" name="nacio">
-                            <input type="text" value="" id="Pais">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <em><strong>LIBRETA MILITAR</strong></em><br><br>
-                            <em>PRIMERA CLASE</em>
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <input type="radio" value="" id="LibretaMPC">
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <em>SEGUNDA CLASE</em>
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <input type="radio" value="" id="LibretaMSC">
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <em>NÚMERO</em>
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <input type="text" value="" id="NumeroLM">
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <em>D.M</em>
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <input type="text" value="" id="NumeroLM">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <em>FECHA Y LUGAR DE NACIMIENTO</em><br>
-                            <p>FECHA 
-                            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                            <span>
-                                DÍA<input type="number" value="" id="Dia" style="width: 50px;" max="31" min="1">
-                                MES<input type="number" value="" id="MES" style="width: 50px;" max="12" min="1">
-                                AÑO<input type="number" value="" id="MES" style="width: 50px;" max="2023" min="1">
-                            </span></p>
-                            <p>PAÍS
-                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                <div class="container" id="container2">
+                    <table border="1" style="width: 100%;">
+                        <tr align="left">
+                            <td>
+                                <em>Primer Apellido</em><br>
+                                <input type="text" value="" id="txtapellido">
+                            </td>
+                            <td>
+                                <em>Segundo apellido (o de casa)</em><br>
+                                <input type="text" value="" id="txtsegundoapellido">
+                            </td>
+                            <td>
+                                <em>Nombres</em><br>
+                                <input type="text" value="" id="txtnombre">
+                            </td>               
+                        </tr>
+                    </table>    
+                </div>
+                <div class="container" id="container3">
+                    <table border="2" style="width: 100%;">
+                        <tr>
+                            <td WIDTH = "600PX">
+                                <em>Tipo de identificación</em><br>
+                                    C.C<input type="radio" value="" id="C.C" name="id">
+                                    C.E<input type="radio" value="" id="C.E" name="id">
+                                    PAS<input type="radio" value="" id="PAS" name="id">
+                                    &nbsp;&nbsp;<em>No.</em>
+                                    <input type="text" value="" id="numeroID">
+                            </td>
+                            <td WIDTH="200px">
+                                <em>Sexo</em>
+                                <br>
+                                F<input type="radio" value="" id="SF" name="genero">
+                                M<input type="radio" value="" id="SM" name="genero">
+                            </td>
+                            <td WIDHT="200px">
+                                <em>Nacionalidad</em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <em>País</em>
+                                <br>
+                                <em>COL.</em><input type="radio" value="" id="Colombia" name="nacio">
+                                <em>Extranjero</em><input type="radio" value="" id="Extranjero" name="nacio">
                                 <input type="text" value="" id="Pais">
-                            </p>
-                            <p>DPTO
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <em><strong>LIBRETA MILITAR</strong></em><br><br>
+                                <em>PRIMERA CLASE</em>
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <input type="radio" value="" id="LibretaMPC">
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <em>SEGUNDA CLASE</em>
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <input type="radio" value="" id="LibretaMSC">
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <em>NÚMERO</em>
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <input type="text" value="" id="NumeroLM">
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <em>D.M</em>
+                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                <input type="text" value="" id="NumeroLM">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <em>FECHA Y LUGAR DE NACIMIENTO</em><br>
+                                <p>FECHA 
                                 &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                                <input type="text" value="" id="DPTO">
-                            </p>
-                            <p>MUNICIPIO
-                                &#160;&#160;&#160;&#160;&#160;&#160;&#160;
-                                <input type="text" value="" id="MUNI">
-                            </p>
-                        </td>
-                        <td colspan="2"> 
-                            <em>DIRECCIÓN DE CORRESPONDENCIA</em><br>
-                            <input type="text" value="" id="DIRECCION" style="width: 350px;">
-                            <p>PAÍS
-                                <input type="text" value="" id="PAISB" style="width: 150px;">
-                                DEPTO
-                                <input type="text" value="" id="DEPTO" style="width: 150px;">
-                            </p>
-                            <p>MUNICIPIO
-                                <input type="text" value="" id="muni" width="350px">
-                            </p>
-                            <p>TELEFONO
-                                <input type="tel" value="" id="TELEFONO" style="width: 150px;">
-                                EMAIL
-                                <input type="email" value="" id="email" style="width: 150px;">
-                            </p>
-                        </td>
-                    </tr>
-                </table>
+                                <span>
+                                    DÍA<input type="number" value="" id="Dia" style="width: 50px;" max="31" min="1">
+                                    MES<input type="number" value="" id="MES" style="width: 50px;" max="12" min="1">
+                                    AÑO<input type="number" value="" id="MES" style="width: 50px;" max="2023" min="1">
+                                </span></p>
+                                <p>PAÍS
+                                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                    <input type="text" value="" id="Pais">
+                                </p>
+                                <p>DPTO
+                                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                    <input type="text" value="" id="DPTO">
+                                </p>
+                                <p>MUNICIPIO
+                                    &#160;&#160;&#160;&#160;&#160;&#160;&#160;
+                                    <input type="text" value="" id="MUNI">
+                                </p>
+                            </td>
+                            <td colspan="2"> 
+                                <em>DIRECCIÓN DE CORRESPONDENCIA</em><br>
+                                <input type="text" value="" id="DIRECCION" style="width: 350px;">
+                                <p>PAÍS
+                                    <input type="text" value="" id="PAISB" style="width: 150px;">
+                                    DEPTO
+                                    <input type="text" value="" id="DEPTO" style="width: 150px;">
+                                </p>
+                                <p>MUNICIPIO
+                                    <input type="text" value="" id="muni" width="350px">
+                                </p>
+                                <p>TELEFONO
+                                    <input type="tel" value="" id="TELEFONO" style="width: 150px;">
+                                    EMAIL
+                                    <input type="email" value="" id="email" style="width: 150px;">
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 <br>
                 <li><span class="txt2">FORMACIÓN ACADÉMICA</span></li>
                 <br>
-                <table border="2" align="center" height=90 width="100%" cellpadding="" cellspacing="" style="margin: 0 auto;">
-                    <tr>
-                        <th>
-                            <p>EDUCACIÓN BÁSICA Y MEDIA
-                                MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS 6o. A 11o. DE
-                                EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA 
-                            </p>
-                            <table border="2" align="center" height=10 width="70%" style="border-bottom: 0;">
-                                <tr class="head-edu">
-                                    <th colspan="11">
-                                        <em>EDUCACIÓN BÁSICA</em>
-                                    </th>
-                                    <th>
-                                        <em>TÍTULO OBTENIDO: </em>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <td colspan="5">PRIMARIA</td>
-                                    <td colspan="4">SECUNDARIA</td>
-                                    <td colspan="2">MEDIA</td>
-                                    <td>FECHA DE GRADO</td>
-                                </tr>
-                                <tr>
-                                    <td><span>1o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>2o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>3o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>4o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>5o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>6o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>7o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>8o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>9o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>10o<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><span>11<br><input type="radio" name="edu" class="edu"></span></td>
-                                    <td><p>
-                                        Mes <input type="number" value="" id="mesgrado" max="12" min="1">
-                                        Año <input type="number" value="" id="añogrado" max="2023" min="1900">
-                                    </p></td>
-                                </tr>
-                            </table>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)<br>
-                                DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:<br>
-                                TC (TÉCNICA), TL (TECNOLÓGICA), TE (TECNOLÓGICA ESPECIALIZADA), UN (UNIVERSITARIA),
-                                ES (ESPECIALIZACIÓN), MG (MAESTRÍA O MAGISTER), DOC (DOCTORADO O PHD),
-                                RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA EN UNA LEY).</p>
-                                <table border="2" align="center" height=10 width="90%">
-                                    <tr rowspan="2">
-                                        <th>MODALIDAD ACADEMICA</th>
-                                        <th>No. SESMESTRES<br>APROBADOS</th>
-                                        <th colspan="2" style="width: 60px;">GRADUADOS<br>
-                                        SI &#160; &#160; &#160;&#160;&#160;NO</th>
-                                        <th>NOMBRE DE LOS ESTUDIOS<br>O TÍTULO OBTENIDO</th>
-                                        <th colspan="2" style="width: 80px;">TERMINACIÓN<br>
-                                        MES &#160; &#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;AÑO</th>
-                                        <th>No. DE TARJETA<br>PROFESIONAL</th>
-                                    </tr>
-                                    <tr class="impar">
-                                        <td><input type="text" value="" id="modalidadACA" class="imipar"></td>
-                                        <td><input type="text" value="" id="NosemestresAPRO" class="imipar"></td>
-                                        <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="NAMETITULO" class="imipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="PROFESIONAL" class="imipar"></td>
-                                    </tr>
-                                    <tr class="par">
-                                        <td><input type="text" value="" id="modalidadACA" class="ipar"></td>
-                                        <td><input type="text" value="" id="NosemestresAPRO" class="ipar"></td>
-                                        <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="NAMETITULO" class="ipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="PROFESIONAL" class="ipar"></td>
-                                    </tr>
-                                    <tr class="impar">
-                                        <td><input type="text" value="" id="modalidadACA" class="imipar"></td>
-                                        <td><input type="text" value="" id="NosemestresAPRO" class="imipar"></td>
-                                        <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="NAMETITULO" class="imipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="imipar"></td>
-                                        <td><input type="text" value="" id="PROFESIONAL" class="imipar"></td>
-                                    </tr>
-                                    <tr class="par">
-                                        <td><input type="text" value="" id="modalidadACA" class="ipar"></td>
-                                        <td><input type="text" value="" id="NosemestresAPRO" class="ipar"></td>
-                                        <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="NAMETITULO" class="ipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="ipar"></td>
-                                        <td><input type="text" value="" id="PROFESIONAL" class="ipar"></td>
-                                    </tr>
-                                </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <p>ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (R), BIEN (B) O MUY BIEN (MB)
-                            </p>
-                            <table border="2" align="center" height=10 width="50%">
-                                <tr>
-                                    <th style="width: 200px;" rowspan="2">IDIOMA</th>
-                                    <th colspan="3" style="width: 70px;">LO HABLA</th>
-                                    <th colspan="3" style="width: 70px;">LO LEE</th> 
-                                    <th colspan="3" style="width: 70px;">LO ESCRIBE</th>
-                                </tr>
-                                <tr>
-                                    <td>R</td>
-                                    <td>B</td>
-                                    <td>MB</td>
-                                    <td>R</td>
-                                    <td>B</td>
-                                    <td>MB</td>
-                                    <td>R</td>
-                                    <td>B</td>
-                                    <td>MB</td>
-                                </tr>
-                                <tr class="imipar">
-                                    <td><input type="text" value="" id="lengauje"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                </tr>
-                                <tr class="par">
-                                    <td><input type="text" value="" id="lengauje" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                </tr>
-                                <tr class="imipar">
-                                    <td><input type="text" value="" id="lengauje"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
-                                </tr>
-                                <tr class="par">
-                                    <td><input type="text" value="" id="lengauje" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                    <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                </table>
+                <div class="container" id="container4">
+                    <table border="2" align="center" height=90 width="100%" cellpadding="" cellspacing="" style="margin: 0 auto;">
+                        <tr>
+                            <th>
+                                <p>EDUCACIÓN BÁSICA Y MEDIA
+                                    MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A 6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS 6o. A 11o. DE
+                                    EDUCACIÓN BÁSICA SECUNDARIA Y MEDIA 
+                                </p>
+                                <div class="container" id="container5">
+                                    <table border="2" align="center" height=10 width="70%" style="border-bottom: 0;">
+                                        <tr class="head-edu">
+                                            <th colspan="11">
+                                                <em>EDUCACIÓN BÁSICA</em>
+                                            </th>
+                                            <th>
+                                                <em>TÍTULO OBTENIDO: </em>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="5">PRIMARIA</td>
+                                            <td colspan="4">SECUNDARIA</td>
+                                            <td colspan="2">MEDIA</td>
+                                            <td>FECHA DE GRADO</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>1o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>2o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>3o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>4o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>5o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>6o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>7o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>8o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>9o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>10o<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><span>11<br><input type="radio" name="edu" class="edu"></span></td>
+                                            <td><p>
+                                                Mes <input type="number" value="" id="mesgrado" max="12" min="1">
+                                                Año <input type="number" value="" id="añogrado" max="2023" min="1900">
+                                            </p></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>EDUCACION SUPERIOR (PREGRADO Y POSTGRADO)<br>
+                                    DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:<br>
+                                    TC (TÉCNICA), TL (TECNOLÓGICA), TE (TECNOLÓGICA ESPECIALIZADA), UN (UNIVERSITARIA),
+                                    ES (ESPECIALIZACIÓN), MG (MAESTRÍA O MAGISTER), DOC (DOCTORADO O PHD),
+                                    RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA EN UNA LEY).</p>
+                                    <div class="container" id="container6">
+                                        <table border="2" align="center" height=10 width="90%">
+                                            <tr rowspan="2">
+                                                <th>MODALIDAD ACADEMICA</th>
+                                                <th>No. SESMESTRES<br>APROBADOS</th>
+                                                <th colspan="2" style="width: 60px;">GRADUADOS<br>
+                                                SI &#160; &#160; &#160;&#160;&#160;NO</th>
+                                                <th>NOMBRE DE LOS ESTUDIOS<br>O TÍTULO OBTENIDO</th>
+                                                <th colspan="2" style="width: 80px;">TERMINACIÓN<br>
+                                                MES &#160; &#160; &#160;&#160;&#160;&#160;&#160;&#160;&#160;AÑO</th>
+                                                <th>No. DE TARJETA<br>PROFESIONAL</th>
+                                            </tr>
+                                            <tr class="impar">
+                                                <td><input type="text" value="" id="modalidadACA" class="imipar"></td>
+                                                <td><input type="text" value="" id="NosemestresAPRO" class="imipar"></td>
+                                                <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="NAMETITULO" class="imipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="PROFESIONAL" class="imipar"></td>
+                                            </tr>
+                                            <tr class="par">
+                                                <td><input type="text" value="" id="modalidadACA" class="ipar"></td>
+                                                <td><input type="text" value="" id="NosemestresAPRO" class="ipar"></td>
+                                                <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="NAMETITULO" class="ipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="PROFESIONAL" class="ipar"></td>
+                                            </tr>
+                                            <tr class="impar">
+                                                <td><input type="text" value="" id="modalidadACA" class="imipar"></td>
+                                                <td><input type="text" value="" id="NosemestresAPRO" class="imipar"></td>
+                                                <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="NAMETITULO" class="imipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="imipar"></td>
+                                                <td><input type="text" value="" id="PROFESIONAL" class="imipar"></td>
+                                            </tr>
+                                            <tr class="par">
+                                                <td><input type="text" value="" id="modalidadACA" class="ipar"></td>
+                                                <td><input type="text" value="" id="NosemestresAPRO" class="ipar"></td>
+                                                <td><input type="text" value="" id="GRADUADOSI" style="width: 20px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="GRADUADONO" style="width: 20px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="NAMETITULO" class="ipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNMES" style="width: 40px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="TERMINACIÓNAÑO" style="width: 60px;" class="ipar"></td>
+                                                <td><input type="text" value="" id="PROFESIONAL" class="ipar"></td>
+                                            </tr>
+                                        </table>
+                                    </div>                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>ESPECÍFIQUE LOS IDIOMAS DIFERENTES AL ESPAÑOL QUE: HABLA, LEE, ESCRIBE DE FORMA, REGULAR (R), BIEN (B) O MUY BIEN (MB)
+                                </p>
+                                <div class="container" id="container7">
+                                    <table border="2" align="center" height=10 width="50%">
+                                        <tr>
+                                            <th style="width: 200px;" rowspan="2">IDIOMA</th>
+                                            <th colspan="3" style="width: 70px;">LO HABLA</th>
+                                            <th colspan="3" style="width: 70px;">LO LEE</th> 
+                                            <th colspan="3" style="width: 70px;">LO ESCRIBE</th>
+                                        </tr>
+                                        <tr>
+                                            <td>R</td>
+                                            <td>B</td>
+                                            <td>MB</td>
+                                            <td>R</td>
+                                            <td>B</td>
+                                            <td>MB</td>
+                                            <td>R</td>
+                                            <td>B</td>
+                                            <td>MB</td>
+                                        </tr>
+                                        <tr class="imipar">
+                                            <td><input type="text" value="" id="lengauje"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                        </tr>
+                                        <tr class="par">
+                                            <td><input type="text" value="" id="lengauje" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                        </tr>
+                                        <tr class="imipar">
+                                            <td><input type="text" value="" id="lengauje"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;"></td>
+                                        </tr>
+                                        <tr class="par">
+                                            <td><input type="text" value="" id="lengauje" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                            <td><input type="text" value="" id="lengauje" style="width: 10px;" class="ipar"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
             </OL>
     </main>
     <footer></footer>

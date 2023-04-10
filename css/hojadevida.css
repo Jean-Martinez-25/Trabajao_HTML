@@ -1,11 +1,11 @@
 body{
-    background-color: #bedffb;
+    background-color: #efebeb;
 }
 .par, .ipar{
     background-color: #ccccff;
 }
 .impar{
-    background-color: #b2faf7;
+    background-color: #e6d7f1;
 }
 .txt2{
     background: black;
@@ -14,10 +14,23 @@ body{
     border-radius: 20%;
 }
 body, input{
-        background-color: #b2faf7;
+        background-color: #e6d7f1;
 }
 .head-edu{
-    background-color: #a0e2b3;
+    background-color: #9146e2;
 }
-
+@media screen and (max-width: 480px){
+    .container{
+        height: auto;
+    }
+    .container1{
+        width: auto;
+    }
+    .container6{
+        width: auto;
+    }
+    #barra_lateral{
+        display:none;
+    }
+}
 
